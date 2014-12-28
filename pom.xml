@@ -64,6 +64,19 @@
 		<tag>master</tag>
 	</scm>
 
+	<!-- Distribution -->
+	<distributionManagement>
+		<repository>
+			<id>torchmind</id>
+			<url>s3://maven.torchmind.com/release/</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>torchmind</id>
+			<url>s3://maven.torchmind.com/snapshot/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<!-- Properties -->
 	<properties>
 		<!-- Fix Encoding Warning -->
@@ -207,5 +220,13 @@
 				</executions>
 			</plugin>
 		</plugins>
+
+		<extensions>
+			<extension>
+				<groupId>org.springframework.build</groupId>
+				<artifactId>aws-maven</artifactId>
+				<version>5.0.0.RELEASE</version>
+			</extension>
+		</extensions>
 	</build>
 </project>
