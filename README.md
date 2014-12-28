@@ -6,7 +6,7 @@ Basic Usage
 -----------
 
 ```java
-Aether aether = new Aether (LOCAL_REPOSITORY);
+Aether aether = new Aether (new File ("repository"));
 aether.addRepository ((new RemoteRepository.Builder ("central", "default", "http://repo1.maven.org/maven2/")).build ());
 
 List<Artifact> artifacts = aether.resolveArtifacts ("org.apache.maven.plugins:maven-compiler-plugin:3.2", JavaScopes.RUNTIME);
