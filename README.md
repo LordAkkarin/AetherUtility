@@ -5,33 +5,37 @@ Provides simplified access to maven repositories.
 Basic Usage
 -----------
 
-	Aether aether = new Aether (LOCAL_REPOSITORY);
-	aether.addRepository ((new RemoteRepository.Builder ("central", "default", "http://repo1.maven.org/maven2/")).build ());
+```java
+Aether aether = new Aether (LOCAL_REPOSITORY);
+aether.addRepository ((new RemoteRepository.Builder ("central", "default", "http://repo1.maven.org/maven2/")).build ());
 
-	List<Artifact> artifacts = aether.resolveArtifacts ("org.apache.maven.plugins:maven-compiler-plugin:3.2", JavaScopes.RUNTIME);
+List<Artifact> artifacts = aether.resolveArtifacts ("org.apache.maven.plugins:maven-compiler-plugin:3.2", JavaScopes.RUNTIME);
+```
 
 Maven
 -----
 The utility is currently available via the Torchmind maven repository:
 
-	<repositories>
-		<repository>
-			<id>torchmind</id>
-			<url>http://maven.torchmind.com/snapshot</url>
+```xml
+<repositories>
+	<repository>
+		<id>torchmind</id>
+		<url>http://maven.torchmind.com/snapshot</url>
 
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
+	</repository>
+</repositories>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.torchmind.utility</groupId>
-			<artifactId>aether</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
+<dependencies>
+	<dependency>
+		<groupId>com.torchmind.utility</groupId>
+		<artifactId>aether</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</dependency>
+</dependencies>
+```
 
 Building
 --------
