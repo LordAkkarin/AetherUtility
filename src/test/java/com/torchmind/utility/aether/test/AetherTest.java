@@ -31,7 +31,7 @@ import java.io.File;
 
 /**
  * Provides test cases for the Aether utility.
- * @author Johannes Donath <johannesd@torchmind.com>
+ * @author {@literal Johannes Donath <johannesd@torchmind.com>}
  */
 @RunWith (MockitoJUnitRunner.class)
 public class AetherTest {

@@ -48,7 +48,7 @@ import java.util.List;
 /**
  * Provides simplified access to Eclipse Aether.
  *
- * @author Johannes Donath <johannesd@torchmind.com>
+ * @author {@literal Johannes Donath <johannesd@torchmind.com>}
  */
 public class Aether {
 
