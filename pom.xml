@@ -27,6 +27,42 @@
 	<description>Provides a simple way of accessing maven repositories via aether.</description>
 	<inceptionYear>2014</inceptionYear>
 
+	<!-- Organization -->
+	<organization>
+		<name>Torchmind</name>
+		<url>http://www.torchmind.com</url>
+	</organization>
+
+	<!-- Contributors -->
+	<contributors>
+		<!-- Johannes "Akkarin" Donath -->
+		<contributor>
+			<name>Johannes Donath</name>
+			<email>johannesd@torchmind.com</email>
+			<url>http://www.johannes-donath.com</url>
+
+			<organization>Torchmind</organization>
+			<organizationUrl>http://www.torchmind.com</organizationUrl>
+		</contributor>
+	</contributors>
+
+	<!-- Licenses -->
+	<licenses>
+		<license>
+			<name>Apache License 2.0</name>
+			<url>LICENSE</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<!-- SCM -->
+	<scm>
+		<url>https://github.com/LordAkkarin/AetherUtility</url>
+		<connection>scm:git:git://github.com/LordAkkarin/AetherUtility.git</connection>
+		<developerConnection>scm:git:git://git@github.com/LordAkkarin/AetherUtility.git</developerConnection>
+		<tag>master</tag>
+	</scm>
+
 	<!-- Properties -->
 	<properties>
 		<!-- Fix Encoding Warning -->
