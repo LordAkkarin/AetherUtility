@@ -25,6 +25,7 @@
 	<!-- Artifact Metadata -->
 	<name>Aether Utility</name>
 	<description>Provides a simple way of accessing maven repositories via aether.</description>
+	<url>https://github.com/LordAkkarin/AetherUtility</url>
 	<inceptionYear>2014</inceptionYear>
 
 	<!-- Organization -->
